@@ -1,7 +1,8 @@
 # TODO Напишите функцию для поиска индекса товара
 def poisk(spisok, tovar):
-    if tovar in spisok:
-        return spisok.index(tovar)
+    for index_, a in enumerate(spisok):
+        if a == tovar:
+            return index_
 
 
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
